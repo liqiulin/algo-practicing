@@ -1,6 +1,8 @@
 package lql.algo.sort;
 
 /**
+ *  <a href="https://time.geekbang.org/column/article/41913">12 | 排序（下）：如何用快排思想在O(n)内查找第K大元素？</a>
+ *
  * 利用快排思想，核心：  q+1 = k, return q;  q+1 > k, 继续f(p...q-1)； 否则 继续f(q+1...r)
  */
 public class KthSmallest {
