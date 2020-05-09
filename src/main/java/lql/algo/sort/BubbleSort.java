@@ -52,19 +52,17 @@ public class BubbleSort {
      * @param a
      */
     public static void bubbleSort2(int[] a, int n) {
-        int temp;
         for (int i = 0; i < n; i++) {
-            boolean flag = false;
+            boolean exchanged = false;
             for (int j = 0; j < n-i-1; j++) {
                 if (a[j] > a[j+1]) {
-                    temp = a[j+1];
-                    a[j+1] = a[j];
-                    a[j] = temp;
-                    flag = true;
+                    int tmp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = tmp;
+                    exchanged = true;
                 }
             }
-
-            if (!flag) {
+            if (!exchanged) {
                 break;
             }
         }
