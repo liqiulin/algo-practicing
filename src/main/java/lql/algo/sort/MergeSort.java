@@ -30,8 +30,8 @@ public class MergeSort {
         mergeSortInternally(a, p, q);
         mergeSortInternally(a, q+1, r);
 
-//        merge(a, p, q, r);
-        mergeBySentry(a, p, q, r);
+        merge(a, p, q, r);
+//        mergeBySentry(a, p, q, r);
     }
 
     private static void merge(int[] a, int p, int q, int r) {
