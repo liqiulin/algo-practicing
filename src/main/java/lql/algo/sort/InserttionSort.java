@@ -63,4 +63,23 @@ public class InserttionSort {
         }
     }
 
+
+    public static void insertSort(int[]a, int n) {
+        if (null == a || n <= 1) {
+            return;
+        }
+
+        for (int i = 1; i < n; i++) {
+            int val = a[i];
+            int j = i -1;
+            for (; j >=0; j--) {
+                if (a[j] > val) {
+                    a[j+1] = a[j];
+                } else {
+                    break;
+                }
+            }
+            a[j+1] = val;
+        }
+    }
 }
